@@ -16,14 +16,13 @@ cask "tethercam-obs" do
   version "0.1.0"
   sha256 "ff7106f81a8ae85f86df2c56621ecaf43507b9c71582a62f868418fcd287679d"
 
-  url "https://github.com/Kanevry/tethercam/releases/download/v#{version}/TetherCam-obs-plugin.zip",
-      verified: "github.com/Kanevry/tethercam/"
+  url "https://github.com/Kanevry/tethercam/releases/download/v#{version}/TetherCam-obs-plugin.zip"
   name "TetherCam for OBS"
   desc "OBS source plugin for an iPhone camera over the USB cable"
   homepage "https://github.com/Kanevry/tethercam"
 
   # VideoToolbox HEVC decode plus the plugin's deployment target.
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   # The zip's top-level entry is the bundle itself: packaging/build-pkg.sh builds it
   # with `ditto --keepParent`, which keeps only the bundle's own directory name, not a
