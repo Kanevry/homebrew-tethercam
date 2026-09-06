@@ -33,9 +33,7 @@ cask "tethercam-obs" do
 
   # The plugin keeps one small file: the once-per-scene-collection flag for the
   # first-run hint. Nothing else is written outside the plugin bundle.
-  zap trash: [
-    "~/Library/Application Support/obs-studio/plugin_config/obs-iphone-usb-cam",
-  ]
+  zap trash: "~/Library/Application Support/obs-studio/plugin_config/obs-iphone-usb-cam"
 
   caveats do
     "Restart OBS after installing, then use Tools -> \"TetherCam: Add iPhone camera to current scene\"."
