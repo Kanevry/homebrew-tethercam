@@ -13,8 +13,8 @@
 # the checksum below is the one published next to the v0.1.0 zip asset as
 # TetherCam-obs-plugin.zip.sha256, verified 2026-09-09 against a fresh download.
 cask "tethercam-obs" do
-  version "0.2.0"
-  sha256 "95f74a365a6352bf933cdc5df99ab407b07a6352cc2ecb1a1849237cedd7c195"
+  version "0.2.1"
+  sha256 "f8819d44d47756db5aa64a7e7958e81a3d33214800c2697e96d4279ef55677cc"
 
   url "https://github.com/Kanevry/tethercam/releases/download/v#{version}/TetherCam-obs-plugin.zip"
   name "TetherCam for OBS"
